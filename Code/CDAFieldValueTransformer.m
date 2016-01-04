@@ -8,7 +8,7 @@
 
 @import MapKit;
 
-#import <ISO8601DateFormatter/ISO8601DateFormatter.h>
+#import <ISO8601/ISO8601.h>
 
 #import "CDAClient+Private.h"
 #import "CDAFieldValueTransformer.h"
@@ -84,7 +84,7 @@
                 return nil;
             }
             
-            return [[ISO8601DateFormatter new] dateFromString:value];
+            return [NSDate dateWithISO8601String:value];
             
         case CDAFieldTypeBoolean:
         case CDAFieldTypeInteger:

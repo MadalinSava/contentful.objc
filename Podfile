@@ -5,8 +5,8 @@ platform :ios, "6.0"
 
 target "ContentfulDeliveryAPI", :exclusive => true do
 
+podspec :path => 'ContentfulDeliveryAPI.podspec'
 pod 'AFNetworking', :inhibit_warnings => true
-pod 'ISO8601DateFormatter'
 
 end
 
